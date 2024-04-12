@@ -1,0 +1,148 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor{
+
+    width: 95%;    
+
+    @include m.tablet{
+        width: 40%;
+        margin: 5rem auto;
+    }
+}
+
+.main{
+    background-color: v.$white;
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+    color: v.$wenbrown;
+
+    &__dark{
+        background-color: lighten($color: v.$darkcoal, $amount: 1) ;
+    }
+
+    &__contenedor{
+        margin: 0rem 2rem;
+        font-family: v.$outfit;
+
+        &-line{
+            margin-bottom: 2rem;
+            border-bottom: .1px solid v.$lightgrey;
+        }
+    }
+
+    &__img{
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+
+    &__titulo{
+        margin-top: 1.5rem;
+        font-family: v.$family;
+        color: v.$darkcoal;
+        font-size: 3.5rem;
+    }
+
+    &__description{
+        margin-top: 1.5rem;
+        font-family: v.$outfit;
+    }
+
+    &__preparation {
+        border-radius: 1rem;
+        background-color: v.$rosewhite;
+        margin: 2rem 0rem;
+        padding: 1rem 2rem;
+        padding-top: 2rem;
+
+        &-theme{
+            background-color: lighten($color: v.$wenbrown, $amount: 20) ;
+        }
+    }
+
+    &__time{
+        color: v.$vinoTinto;
+        font-weight: bold;
+    }
+
+
+    &__list{
+        
+        padding: 0;
+        list-style-position: inside;        
+                
+        span{
+            font-weight: bold;
+            color: v.$wenbrown;
+        }
+
+        li{
+            line-height: 2;
+            list-style-position: outside;
+            margin-left: 2rem;
+        }
+
+        li::marker{
+            color: v.$vinoTinto;
+        }
+
+        &--time{
+            color: v.$darkcoal;
+        }
+
+        &-vineta {
+            li::marker{
+                color: v.$nutmeg;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            margin-left: 1.5rem;
+        }
+    } 
+
+    &__subtitulo{
+        color: v.$nutmeg;
+    }
+
+    &__tabla{
+        margin-top: 2rem;
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+
+        tr{
+            border-bottom:.1px solid v.$lightgrey;
+
+        }
+
+        td{
+            padding: 1rem 0;
+            color: v.$nutmeg;
+            
+            span{
+                font-weight: bold;
+            }
+        }
+
+        tr:last-child{
+            border-bottom: 1px solid v.$white;
+        }
+
+       
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.dark{
+    background-color: v.$vinOscuro;
+  }
+
+  .dartText{
+    color: v.$white;
+  }
+

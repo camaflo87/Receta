@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+html {
+    box-sizing: border-box;
+    font-family: v.$family;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+    background-color: v.$eggshell;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3{
+    margin: 0;
+  }
+
+  p{
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+ 

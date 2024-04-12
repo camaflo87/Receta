@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tema{
+    display: flex;
+    justify-content: center;
+
+    @include m.tablet{
+        justify-content: flex-end;
+    }    
+
+    &__button{
+        padding: 2rem;
+        width: 50%;
+        &:hover{
+            cursor: pointer;
+        }
+        text-transform: uppercase;
+        border-radius: 1rem;
+        margin: 2rem 0;
+
+        @include m.tablet{
+            width: auto;    
+            margin: 2rem 2rem 0rem 0rem;
+        }
+
+    }
+}

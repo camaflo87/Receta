@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+  </head>
+  <body>
+    <div class="tema">
+      <button class="tema__button">Theme Dark</button>
+    </div>
+    <main class="main contenedor">
+      <div class="main__contenedor">
+        <img class="main__img" src="assets/images/image-omelette.jpeg" alt="omelette" />
+        <h1 class="main__titulo theme">Simple Omelette Recipe</h1>
+        <p class="main__description theme">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+
+      <div class="main__contenedor">
+        <div class="main__preparation">
+          <h3 class="main__time theme">Preparation time</h3>
+          <ul class="main__list main__list--time theme">
+            <li><span>Total:</span> Approximately 10 minutes</li>
+            <li><span>Preparation:</span> 5 minutes</li>
+            <li><span>Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main__contenedor main__contenedor-line">
+        <h2 class="main__subtitulo theme">Ingredients</h2>
+        <ul class="main__list main__list-vineta theme">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </div>
+
+      <div class="main__contenedor main__contenedor-line">
+        <h2 class="main__subtitulo theme">Instructions</h2>
+        <ol class="main__list main__list-vineta theme">
+          <li class="list">
+            <p><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+            pepper until they are well mixed. You can add a tablespoon of water
+            or milk for a fluffier texture. 
+          </li>
+          <li>
+            <p><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+            butter or oil.</p>
+          </li>
+          <li>
+            <p><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in
+            the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</p>
+          </li>
+          <li>
+            <p><span>Add fillings (optional):</span> When the eggs begin to set at the edges but
+            are still slightly runny in the middle, sprinkle your chosen
+            fillings over one half of the omelette.</p>
+          </li>
+          <li>
+            <p><span>Fold and serve:</span> As the omelette continues to cook, carefully lift
+            one edge and fold it over the fillings. Let it cook for another
+            minute, then slide it onto a plate.</p>
+          </li>
+          <li><p><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</p></li>
+        </ol>
+      </div>
+
+      <div class="main__contenedor">
+        <h2 class="main__subtitulo theme">Nutrition</h2>
+        <p class="main__description theme">
+          The table below shows nutritional values perserving without the
+          additional fillings.
+        </p>
+        <table class="main__tabla">
+          <tr>
+            <td class="bold">Calories</td>
+            <td><span class="theme">277 kcal</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Carbs</td>
+            <td><span class="theme">0g</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Protein</td>
+            <td><span class="theme">20g</span></td>
+          </tr>
+          <tr>
+            <td class="bold">Fat</td>
+            <td><span class="theme">22g</span></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/camaflo87">Carlos Alberto Martinez Florez</a>.
+    </div>
+
+    <script src="build/js/index.js"></script>
+  </body>
+</html>
